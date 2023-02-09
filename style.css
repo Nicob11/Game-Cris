@@ -69,3 +69,12 @@
       background-color: unset;
       color: unset;
   }
+
+  .girarCarta{
+    transform: rotateY(180deg);
+    transition: .2s;
+  }
+  .blockCard{
+    transform: rotateY(0deg);
+    transition: .2s;
+  }

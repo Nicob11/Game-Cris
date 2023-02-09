@@ -1,52 +1,104 @@
 <!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-
-    <script src="./main.js" type="module"></script>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" type="module" defer></script>
     <title>Memory Game</title>
-</head>
-
-<body>
+  </head>
+  <body>
     <main>
-        <section>
-            <div class="container score-container">
-                <button class="start-btn">Empezar el juego</button>
-                <div class="score-board">
-                    <div class="score-board__item">
-                        <p>Puntos</p>
-                        <p class="score-board__item-score">0</p>
-                    </div>
-                    <div class="score-board__item">
-                        <p>Tiempo</p>
-                        <p class="score-board__item-time">0</p>
-                    </div>
-                </div>
+      <section>
+        <div class="container score-container">
+          <div class="row score-row">
+            <div class="col">
+              <button class="startGame" id="start">Start Game</button>
             </div>
-        </section>
-        <section>
-            <div class="container">
-                <div class="board"></div>
-                <div class="finish-display hide">
-                    <p>🎉</p>
-                    <h2>Has terminado el juego!</h2>
-                </div>
+            <div class="col">
+              <p>Hints</p>
+              <p id="hints">0</p>
             </div>
-        </section>
-    </main>
-    <template id="template-card">
-        <div class="card">
-            <div class="card__front">
+            <div class="col">
+              <p>Time</p>
+              <p id="timer">30</p>
             </div>
-            <div class="card__back">
-            </div>
+          </div>
         </div>
-    </template>
+      </section>
+      <section>
+        <div class="container cards-container" id="cards-container">
+          <div class="row">
+            <div class="col">
+              <button class="card-bton" id="0"><p></p></button>
+            </div>
+            <div class="col">
+              <button class="card-bton" id="1"></button>
+            </div>
+            <div class="col">
+              <button class="card-bton" id="2"></button>
+            </div>
+            <div class="col">
+              <button class="card-bton" id="3"></button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <button class="card-bton" id="4"></button>
+            </div>
 
-</body>
+            <div class="col">
+              <button class="card-bton" id="5"></button>
+            </div>
 
+            <div class="col">
+              <button class="card-bton" id="6"></button>
+            </div>
+
+            <div class="col">
+              <button class="card-bton" id="7"></button>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <button class="card-bton" id="8"></button>
+            </div>
+
+            <div class="col">
+              <button class="card-bton" id="9"></button>
+            </div>
+
+            <div class="col">
+              <button class="card-bton" id="10"></button>
+            </div>
+
+            <div class="col">
+              <button class="card-bton" id="11"></button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <button class="card-bton" id="12"></button>
+            </div>
+
+            <div class="col">
+              <button class="card-bton" id="13"></button>
+            </div>
+
+            <div class="col">
+              <button class="card-bton" id="14"></button>
+            </div>
+
+            <div class="col">
+              <button class="card-bton" id="15"></button>
+            </div>
+          </div>
+        </div>
+        <div class="container" id="finish-game"></div>
+      </section>
+    </main>
+    <script src="./mainGame.js"></script>
+  </body>
 </html>

@@ -53,7 +53,7 @@ background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%
       background: var(--btnColor);
       background: var(--gradientBtnColor);
       border: 10px solid var(--favColor);
-      font-size: 100px;
+      font-size: 70px;
   }
   .card-bton:active{
     background: rgb(34,193,195);

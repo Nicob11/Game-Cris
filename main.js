@@ -35,7 +35,7 @@ let times = false;
 let comprobando = false;
 let newHints = 0;
 let click = 0;
-let time = 40;
+let time = 4;
 
 //TIMER START FUNCTION
 console.log(mixCards)
@@ -60,7 +60,7 @@ function countTime() {
     times = false;
     comprobando = true;
     showResult();
-    finishGame.innerHTML = `<div class="alert alert-danger" role="alert">Game Over</div>`;
+    finishGame.innerHTML = `<div class="alert slidein" role="alert" id="gOver">Game<br>Over</div>`;
 
     return;
   }

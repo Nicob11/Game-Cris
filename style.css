@@ -98,3 +98,25 @@ background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%
 #score-row{
   flex-wrap: nowrap;
 }
+.slidein {
+  animation-duration: 1.5s;
+  animation-name: slidein;
+  animation-iteration-count: 5;
+  animation-direction: alternate;
+}
+
+@keyframes slidein {
+  from {
+    margin-left:0%;
+    width:100%
+  }
+
+  to {
+   margin-left:50%;
+   width:300%;
+ }
+}
+#gOver{
+  background: rgb(178, 19, 6);
+  border: 8px solid rgb(232, 154, 154);
+}

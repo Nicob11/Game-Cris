@@ -35,7 +35,7 @@ let times = false;
 let comprobando = false;
 let newHints = 0;
 let click = 0;
-let time = 5;
+let time = 40;
 
 //TIMER START FUNCTION
 console.log(mixCards)

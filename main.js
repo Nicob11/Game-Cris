@@ -35,19 +35,20 @@ let times = false;
 let comprobando = false;
 let newHints = 0;
 let click = 0;
-let time = 4;
+let time = 10;
 
 //TIMER START FUNCTION
 console.log(mixCards)
 var regresiveTime = setInterval(() => {
-  if (times === true) countTime();
+  if (times) countTime();
 }, 1000);
 
 //START GAME
 startGame.addEventListener("click", () => {
   if (times == false) {
-    countTime();
+   // countTime();
     times = true;
+    time = 3;
   }
   document
     .getElementById("cards-container")
@@ -60,7 +61,7 @@ function countTime() {
     times = false;
     comprobando = true;
     showResult();
-    finishGame.innerHTML = `<div class="alert slidein" role="alert" id="gOver">Game<br>Over</div>`;
+    finishGame.innerHTML = `<div class="alert grow" role="alert" id="gOver">Game<br>Over</div>`;
 
     return;
   }
@@ -138,8 +139,8 @@ function cardCompare() {
 }
 function hints() {
   if (newHints == 8) {
-    finishGame.innerHTML = `<div class="alert alert-info border border-5 w-100 h-100" role="alert">
-    IUJUUU YOU WIIIN
+    finishGame.innerHTML = `<div class="alert win" role="alert">
+    You're<br>The<br>Best
   </div>`;
     times = false;
     return;

@@ -66,11 +66,11 @@ background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%
 
   .seeCard{
     transform: rotateY(180deg);
-    transition: .2s;
+    transition: 0.1s;
   }
   .blockCard{
     transform: rotateY(0deg);
-    transition: .2s;
+    transition: 0.1s;
   }
 
 .score-col{
@@ -101,7 +101,6 @@ background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%
 
 #gOver{
   background: none;
-  /* border: 8px solid rgb(232, 154, 154); */
   font-family: 'Lobster', cursive;
     color: rgb(234, 101, 136)
 }
@@ -116,6 +115,8 @@ background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%
   animation-duration: 2s;
   animation-fill-mode: forwards;
 }
-.win{
+.winP{
   font-family: 'Prompt', sans-serif;
+  font-size: 110px;
+  color: rgb(244, 208, 63)
 }

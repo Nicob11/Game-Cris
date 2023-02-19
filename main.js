@@ -1,3 +1,4 @@
+import { restart } from "./restartFunction.js";
 var cards = [
   `&#127812`,
   `&#127765`,
@@ -59,8 +60,8 @@ function countTime() {
     times = false;
     comprobando = true;
     showResult();
-    finishGame.innerHTML = `<div class="alert grow" role="alert" id="gOver">Game<br>Over</div>`;
-    
+    finishGame.innerHTML = `<div class="alert grow"><p id="gOver">Game<br>Over</p></div>`;
+    startGame.addEventListener("click", restart);
     return;
   }
   time--;
@@ -111,7 +112,7 @@ function cardCompare() {
     newHints++;
     hints();
     startHints.innerHTML = `Hints: ${newHints}`;
-    timer.innerHTML = `time:  ${time + 3}`;
+    timer.innerHTML = `Time:  ${time + 3}`;
     time += 3;
   } else {
     //if(firstSeleccion != secondSeleccion){
@@ -135,10 +136,11 @@ function cardCompare() {
 }
 function hints() {
   if (newHints == 8) {
-    finishGame.innerHTML = `<div class="alert win" role="alert"><p class="winP">
+    finishGame.innerHTML = `<div class="alert grow"><p id="gOver">
     You're<br>The<br>Best
-  </p></div>`;
+    </p></div>`;
     times = false;
+    startGame.addEventListener("click", restart);
     return;
   }
 }

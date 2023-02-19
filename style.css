@@ -115,8 +115,5 @@ background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%
   animation-duration: 2s;
   animation-fill-mode: forwards;
 }
-.winP{
-  font-family: 'Prompt', sans-serif;
-  font-size: 110px;
-  color: rgb(244, 208, 63)
-}
+
+
